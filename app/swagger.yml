@@ -1,0 +1,35 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /category:
+    get:
+      operationId: "category.read"
+      tags:
+        - "Category"
+      summary: "The category data structure supported by the server application"
+      description: "Read one category"
+      responses:
+        200:
+          description: "Successful read category"
+          schema:
+            type: "array"
+            items:
+              properties:
+                category_id:
+                  type: "integer"
+                name:
+                  type: "string"
+                fullname:
+                  type: "string"
+                

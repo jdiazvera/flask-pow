@@ -19,7 +19,7 @@ marshmallow==3.11.1
 marshmallow-sqlalchemy==0.25.0
 openapi-schema-validator==0.1.5
 openapi-spec-validator==0.3.0
-psycopg2==2.8.6
+psycopg2-binary==2.8.6
 pyrsistent==0.17.3
 PyYAML==5.4.1
 requests==2.25.1
